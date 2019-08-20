@@ -2,16 +2,123 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
 }
+
+/* ************   Header   ************* */
+
 
 h1 {
     display: flex;
     justify-content: center;
     margin: 1rem;
+    padding-top: 1rem;
+    font-size: 2.25rem;
 }
+
+.full-stack {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    font-size: 1.4rem;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 1rem 1rem 1rem;
+}
+
+
+/* **************************** Body ************************** */
+
+
+
+/* ****** Headers and Paragraphs ******* */
+
+
+h2 {
+    display: flex;
+    justify-content: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+h3 {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+h4 {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 1rem;
+    font-size: 1.15rem;
+}
+
+h5 {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+p {
+    display: block;
+    justify-content: left;
+    padding-bottom: 1.25rem;
+}
+
+
+/* ******* About Me Section ******** */
+
+
+.about-me-div {
+    margin: 1rem;
+}
+
+.about-me-h2 {
+
+}
+
+.curious {
+    display: flex;
+    justify-content: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.15rem;
+    font-style: italic;
+}
+
+
+.my-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 75%;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+.contact-nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 1rem;
+}
+
+/* ******* Projects Section ********* */
+
+.projects-div {
+    margin: 1rem;
+}
+
 .grubbernaut-img {
     max-width: 100%;
+    padding: 1rem;
 }
 
 .resume {
