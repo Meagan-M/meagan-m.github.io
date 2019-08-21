@@ -1,9 +1,9 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
-
 /* ************   Header   ************* */
 
 
@@ -11,8 +11,8 @@ h1 {
     display: flex;
     justify-content: center;
     margin: 1rem;
-    padding-top: 1rem;
-    font-size: 2.25rem;
+    padding-top: 2rem;
+    font-size: 1.9rem;
 }
 
 .full-stack {
@@ -22,11 +22,11 @@ h1 {
     font-size: 1.4rem;
 }
 
-.site-nav {
+.contact-nav {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    margin: 1rem 1rem 1rem;
+    margin: 1rem;
 }
 
 
@@ -34,12 +34,12 @@ h1 {
 
 
 
-/* ****** Headers and Paragraphs ******* */
+/* ****** Inherited Styling ******* */
 
 
 h2 {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 1.5rem;
@@ -54,22 +54,40 @@ h3 {
 
 h4 {
     display: flex;
-    justify-content: left;
-    padding-bottom: 1rem;
+    justify-content: center;
+    padding-bottom: 2rem;
     font-size: 1.15rem;
 }
 
 h5 {
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    font-size: .9rem;
+    margin-bottom: .25rem;
+}
+
+h6 {
+    display: flex;
+    justify-content: center;
     padding-bottom: 1rem;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 p {
-    display: block;
-    justify-content: left;
+    display: flex;
+    justify-content: center;
     padding-bottom: 1.25rem;
+    font-size: .9rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: .9rem;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -77,53 +95,96 @@ p {
 
 
 .about-me-div {
-    margin: 1rem;
+    margin: 2rem;
 }
 
 .about-me-h2 {
-
 }
 
 .curious {
     display: flex;
-    justify-content: left;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1.15rem;
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
     font-style: italic;
 }
 
-
 .my-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 75%;
+
+    width: 75%;
     border-radius: 50%;
-    margin: 1rem;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.contact-nav {
+/* .site-nav {
+    
+    list-style: none;
+    margin: 1rem 1rem 1rem;
+} */
+
+.button-div {
     display: flex;
     justify-content: space-around;
-    list-style: none;
-    margin: 1rem;
+    margin-top: 1rem; 
+    margin-bottom: 4rem;
+}
+
+button {
+    border: solid black 1px;
+    padding: 1rem 1.75rem 1rem 1.75rem;
+    font-size: .9rem;
 }
 
 /* ******* Projects Section ********* */
 
+
 .projects-div {
-    margin: 1rem;
+    margin: 2rem;
+}
+
+.grubbernaut-h3 {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .grubbernaut-img {
     max-width: 100%;
-    padding: 1rem;
+    margin-top: 1.5rem;
 }
 
-.resume {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.grubbernaut-p {
+    margin-top: 1.5rem;
 }
+
+
+/* ******* Resume Section ******** */
+
+
+.resume-div {
+    margin: 2rem;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+}
+
+.skills-div {
+    padding-top: 2rem;
+}
+
+.resume-blurbs {
+    margin-bottom: 1.25rem;
+}
+
+/* .skills-list {
+    font-size: 1rem;
+} */
 
