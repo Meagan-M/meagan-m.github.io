@@ -4,6 +4,12 @@
     padding: 0;
     font-family: sans-serif;
 }
+
+.wrapper {
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+}
 /* ************   Header   ************* */
 
 
@@ -21,7 +27,7 @@ h1 {
         justify-content: center;
         margin: 1rem;
         padding-top: 2rem;
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 }
 .full-stack {
@@ -60,7 +66,7 @@ h2 {
     justify-content: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-size: 2.5rem;
+    font-size: 1.4rem;
 }
 
 @media screen and (min-width: 813px) { 
@@ -69,7 +75,7 @@ h2 {
         justify-content: center;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        font-size: rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -125,6 +131,11 @@ li {
 .about-me-div {
     margin: 2rem;
 }
+@media screen and (min-width: 813px) {
+    .about-me-h2 {
+
+    }
+}
 
 /* .jank-img {
     background-image: url('/portfolio-page/images/me.jpg');
@@ -155,13 +166,21 @@ li {
     margin-right: auto;
 }
 
-@media screen and (min-width: 813px) { 
+@media screen and (min-width: 600px) { 
     .my-img {
-        width: 30%;
+        width: 35%;
+        border-radius: 50%;
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 900px) { 
+    .my-img {
+        width: 40%;
         border-radius: 50%;
         display: inline-flex;
-        /* margin-top: 2rem; 
-        margin-bottom: 2rem; */
     }
 
     .img-p-container {
@@ -169,14 +188,19 @@ li {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: flex-start;
-        margin-top: 2rem; 
-        margin-bottom: 2rem;
+        margin-top: 1rem; 
+        margin-bottom: 1rem;
     }
 
-    /* .about-me-p {
-        display: flex;
-        justify-content: flex-end; 
-    } */
+    .about-me-p {
+        margin-top: 1rem; 
+        margin-left: 6.5rem;
+        margin-right: 2rem;
+    }
+
+    .projects-h2 {
+        margin-top: 12rem;
+    }
 }
 
 /* .site-nav {
