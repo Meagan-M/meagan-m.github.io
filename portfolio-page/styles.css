@@ -2,7 +2,8 @@
 	box-sizing: border-box;
 	margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Monda', sans-serif;
+    color: #283593;
 }
 
 .wrapper {
@@ -10,24 +11,46 @@
     display: block;
     margin: auto;
 }
+
+
+body {
+    background:white;
+}
+
 /* ************   Header   ************* */
+
+/* .h1-div {
+    
+    /* flex-direction: column; */
+    
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+
 
 
 h1 {
-    display: flex;
-    justify-content: center;
+    display: flex;  
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     margin: 1rem;
     padding-top: 2rem;
-    font-size: 1.9rem;
+    font-size: 2.75rem;
+    font-family: 'Secular One', sans-serif;
+    color: #00BCD4;
+
 }
+
 
 @media screen and (min-width: 800px) { 
     h1 {
         display: flex;
         justify-content: center;
         margin: 1rem;
-        padding-top: 2rem;
-        font-size: 3.5rem;
+        padding-top: 1rem;
+        font-size: 4rem;
+        font-family: 'Secular One', sans-serif;
+        color: #00BCD4;
     }
 }
 
@@ -36,15 +59,26 @@ h1 {
     display: flex;
     justify-content: center;
     margin: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.75rem;
+    color: #76D7C4;
+    
 }
 
 @media screen and (min-width: 800px) { 
     .full-stack {
         display: flex;
         justify-content: center;
-        margin: 1rem;
+        margin: .5rem;
         font-size: 2.5rem;
+    }
+
+    .contact-nav {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding: .5rem;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 10px 1px grey;
     }
 }
 
@@ -53,28 +87,35 @@ h1 {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    margin: 1rem;
+    /* margin: .5rem; */
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px 1px grey;
 }
 
 .fa-github-square {
-    font-size: 3.5rem;
-    color: grey;
+    font-size: 3rem;
+    color: #00BCD4;
 }
 
 .fa-envelope-square {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    color:#00BCD4;
 }
 
 .fa-linkedin {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    color: #00BCD4;
 }
 
 .fa-file-pdf {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    color: #00BCD4;
 }
 
 .fa-download {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
+    color: #00BCD4;
 }
 
 /* **************************** Body ************************** */
@@ -83,31 +124,6 @@ h1 {
 
 /* ****** Inherited Styling ******* */
 
-
-h2 {
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1.4rem;
-}
-
-@media screen and (min-width: 800px) { 
-    h2 {
-        display: flex;
-        justify-content: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        font-size: 2.5rem;
-    }
-}
-
-h3 {
-    display: flex;
-    justify-content: left;
-    padding-bottom: 1rem;
-    font-size: 1.25rem;
-}
 
 h4 {
     display: flex;
@@ -155,28 +171,26 @@ li {
     margin: 2rem;
 }
 
-/* .jank-img {
-    background-image: url('/portfolio-page/images/me.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    margin: auto;
-} */
-
-.curious {
-    display: flex;
-    justify-content: center;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    font-size: 1rem;
+.about-me-h2 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
     font-style: italic;
+    color: #283593;
+}
+
+.about-me-p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    color: #283593;
+    font-size: 1rem;
 }
 
 .my-img {
     width: 75%;
     border-radius: 50%;
+    border: 2px solid grey;
+    box-shadow: 2px 2px 10px 2px grey;
     display: block;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -186,7 +200,7 @@ li {
 
 @media screen and (min-width: 600px) { 
     .my-img {
-        width: 35%;
+        width: 30%;
         border-radius: 50%;
         display: block;
         margin-top: 2rem;
@@ -212,15 +226,22 @@ li {
 
     .about-me-h2 {
         font-size: 1.5rem;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+        font-style: italic;
+        color: #283593;
     }
-    .about-me-p {
+    .about-me-p-div {
         margin-top: 1rem; 
-        margin-left: 6.5rem;
+        margin-left: 2rem;
         margin-right: 2rem;
     }
-        /* p {
-            margin-top: -1rem;
-        } */
+    .about-me-p {
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        color: #283593;
+    }
 }
 
 /* .button-div {
@@ -243,15 +264,33 @@ button {
     margin: 2rem;
 }
 
+.projects-h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 3.5rem;
+    font-family: 'Secular One', sans-serif;
+    color:  #76D7C4;
+}
+
+
 .grubbernaut-h3 {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
 }
+
 
 .grubbernaut-img {
     max-width: 100%;
     margin-top: 1.5rem;
+    border: 2px solid grey;
+    box-shadow: 2px 2px 10px 2px grey;
 }
 
 
@@ -259,43 +298,32 @@ button {
     margin-top: 1.5rem;
 }
 
-/* @media screen and (min-width: 600px) { 
-    .my-img {
-        width: 35%;
-        border-radius: 50%;
-        display: block;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-} */
 
 @media screen and (min-width: 800px) { 
     .projects-div {
-        margin-top: 2rem; 
-        margin-bottom: 10rem;
-    }
-
-    /* .grub-img-div {
-        /* display: block; */
-        /* flex-direction: column;
-        align-items: center;
-        justify-content: center; */ 
+        margin: .5rem;
+        padding-bottom: 6rem;
+    } 
 
     .grubbernaut-img {
         max-width: 100%;
         max-height: auto;
-        margin-top: 2.5rem;
+        margin-top: 7rem;
     }
 
+    .grub-img-div {
+        margin-left: 2.5rem;
+    }
     .grubbernaut-h3 {
         margin-top: 1rem;
         display: flex;
         justify-content: center;
+        font-size: 2rem;
     }
+
     .projects-p-div {
         display: flex;
         margin-top: 1rem;
-        /* margin-left: 1rem; */
         margin-right: 2rem;
     }
     .grubbernaut-p {
@@ -303,19 +331,23 @@ button {
         padding-left: 3rem;
         margin-top: -1rem;
     }
-        p {
-            justify-content: flex-start;
-
-        }
 
     .projects-h2 {
         display: flex;
         justify-content: center;
-        margin-top: 3rem;
-        margin-bottom: 2rem;
+        margin-top: 2rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        font-size: 2.5rem
+        font-size: 4rem;
+        font-family: 'Secular One', sans-serif;
+        color: #76D7C4;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1.25rem;
+        font-size: .9rem;
     }
 }
 
@@ -323,7 +355,7 @@ button {
 /* ******* Resume Section ******** */
 
 
-.resume-div {
+/* .resume-div {
     margin: 2rem;
 }
 
@@ -339,9 +371,18 @@ button {
 
 .resume-blurbs {
     margin-bottom: 1.25rem;
-}
+} */
 
 /* .skills-list {
     font-size: 1rem;
 } */
 
+/* .jank-img {
+    background-image: url('/portfolio-page/images/me.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+} */
