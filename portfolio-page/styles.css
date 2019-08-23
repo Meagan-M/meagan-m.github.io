@@ -15,11 +15,29 @@ h1 {
     font-size: 1.9rem;
 }
 
+@media screen and (min-width: 813px) { 
+    h1 {
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        padding-top: 2rem;
+        font-size: 4rem;
+    }
+}
 .full-stack {
     display: flex;
     justify-content: center;
     margin: 1rem;
     font-size: 1.4rem;
+}
+
+@media screen and (min-width: 813px) { 
+    .full-stack {
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        font-size: 2.5rem;
+    }
 }
 
 .contact-nav {
@@ -42,7 +60,17 @@ h2 {
     justify-content: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+}
+
+@media screen and (min-width: 813px) { 
+    h2 {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: rem;
+    }
 }
 
 h3 {
@@ -98,8 +126,15 @@ li {
     margin: 2rem;
 }
 
-.about-me-h2 {
-}
+/* .jank-img {
+    background-image: url('/portfolio-page/images/me.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+} */
 
 .curious {
     display: flex;
@@ -111,7 +146,6 @@ li {
 }
 
 .my-img {
-
     width: 75%;
     border-radius: 50%;
     display: block;
@@ -119,6 +153,30 @@ li {
     margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (min-width: 813px) { 
+    .my-img {
+        width: 30%;
+        border-radius: 50%;
+        display: inline-flex;
+        /* margin-top: 2rem; 
+        margin-bottom: 2rem; */
+    }
+
+    .img-p-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        margin-top: 2rem; 
+        margin-bottom: 2rem;
+    }
+
+    /* .about-me-p {
+        display: flex;
+        justify-content: flex-end; 
+    } */
 }
 
 /* .site-nav {
