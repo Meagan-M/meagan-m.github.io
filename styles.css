@@ -214,6 +214,7 @@ li {
         width: 35%;
         border-radius: 50%;
         display: inline-flex;
+        align-self: center;
     }
 
     .img-p-container {
