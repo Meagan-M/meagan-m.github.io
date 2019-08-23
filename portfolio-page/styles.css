@@ -21,7 +21,7 @@ h1 {
     font-size: 1.9rem;
 }
 
-@media screen and (min-width: 813px) { 
+@media screen and (min-width: 800px) { 
     h1 {
         display: flex;
         justify-content: center;
@@ -30,6 +30,8 @@ h1 {
         font-size: 3.5rem;
     }
 }
+
+
 .full-stack {
     display: flex;
     justify-content: center;
@@ -37,7 +39,7 @@ h1 {
     font-size: 1.4rem;
 }
 
-@media screen and (min-width: 813px) { 
+@media screen and (min-width: 800px) { 
     .full-stack {
         display: flex;
         justify-content: center;
@@ -46,6 +48,7 @@ h1 {
     }
 }
 
+
 .contact-nav {
     display: flex;
     justify-content: space-around;
@@ -53,6 +56,26 @@ h1 {
     margin: 1rem;
 }
 
+.fa-github-square {
+    font-size: 3.5rem;
+    color: grey;
+}
+
+.fa-envelope-square {
+    font-size: 3.5rem;
+}
+
+.fa-linkedin {
+    font-size: 3.5rem;
+}
+
+.fa-file-pdf {
+    font-size: 3.5rem;
+}
+
+.fa-download {
+    font-size: 3.25rem;
+}
 
 /* **************************** Body ************************** */
 
@@ -69,7 +92,7 @@ h2 {
     font-size: 1.4rem;
 }
 
-@media screen and (min-width: 813px) { 
+@media screen and (min-width: 800px) { 
     h2 {
         display: flex;
         justify-content: center;
@@ -131,11 +154,6 @@ li {
 .about-me-div {
     margin: 2rem;
 }
-@media screen and (min-width: 813px) {
-    .about-me-h2 {
-
-    }
-}
 
 /* .jank-img {
     background-image: url('/portfolio-page/images/me.jpg');
@@ -176,9 +194,9 @@ li {
     }
 }
 
-@media screen and (min-width: 900px) { 
+@media screen and (min-width: 800px) { 
     .my-img {
-        width: 40%;
+        width: 35%;
         border-radius: 50%;
         display: inline-flex;
     }
@@ -192,24 +210,20 @@ li {
         margin-bottom: 1rem;
     }
 
+    .about-me-h2 {
+        font-size: 1.5rem;
+    }
     .about-me-p {
         margin-top: 1rem; 
         margin-left: 6.5rem;
         margin-right: 2rem;
     }
-
-    .projects-h2 {
-        margin-top: 12rem;
-    }
+        /* p {
+            margin-top: -1rem;
+        } */
 }
 
-/* .site-nav {
-    
-    list-style: none;
-    margin: 1rem 1rem 1rem;
-} */
-
-.button-div {
+/* .button-div {
     display: flex;
     justify-content: space-around;
     margin-top: 1rem; 
@@ -220,7 +234,7 @@ button {
     border: solid black 1px;
     padding: 1rem 1.75rem 1rem 1.75rem;
     font-size: .9rem;
-}
+} */
 
 /* ******* Projects Section ********* */
 
@@ -240,8 +254,69 @@ button {
     margin-top: 1.5rem;
 }
 
+
 .grubbernaut-p {
     margin-top: 1.5rem;
+}
+
+/* @media screen and (min-width: 600px) { 
+    .my-img {
+        width: 35%;
+        border-radius: 50%;
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+} */
+
+@media screen and (min-width: 800px) { 
+    .projects-div {
+        margin-top: 2rem; 
+        margin-bottom: 10rem;
+    }
+
+    /* .grub-img-div {
+        /* display: block; */
+        /* flex-direction: column;
+        align-items: center;
+        justify-content: center; */ 
+
+    .grubbernaut-img {
+        max-width: 100%;
+        max-height: auto;
+        margin-top: 2.5rem;
+    }
+
+    .grubbernaut-h3 {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .projects-p-div {
+        display: flex;
+        margin-top: 1rem;
+        /* margin-left: 1rem; */
+        margin-right: 2rem;
+    }
+    .grubbernaut-p {
+        justify-content: flex-start;
+        padding-left: 3rem;
+        margin-top: -1rem;
+    }
+        p {
+            justify-content: flex-start;
+
+        }
+
+    .projects-h2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 2.5rem
+    }
 }
 
 
